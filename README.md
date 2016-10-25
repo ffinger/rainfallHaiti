@@ -24,5 +24,8 @@ Dataset: NOAA Climate Forecast System v2 Forecasts
 [Description](https://www.ncdc.noaa.gov/data-access/model-data/model-datasets/climate-forecast-system-version2-cfsv2)
 [Download](http://nomads.ncdc.noaa.gov/thredds/dodsC/modeldata/cfsv2_forecast_6-hourly_9mon_flxf/)
 
-###code to read and save precipitation forecasts at the centroids of the watersheds
+Code to read and save precipitation forecasts at the centroids of the watersheds: prate_download.m
+
+Each file in the subfolder *forecast* corresponds to a 60 days forecast of rainfall in each watershed starting from the date in the file name.
+
 

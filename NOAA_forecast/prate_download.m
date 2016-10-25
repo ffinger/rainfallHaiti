@@ -30,8 +30,8 @@ end
 
 
 % url of the precipiataion rate
-Initial_date=[2016,09,25,0,0,0];  % first date for metereological data forecast
-Final_date=[2016,10,05,0,0,0];    % last date available in noaa server
+Initial_date=[2016,10,15,0,0,0];  % first date for metereological data forecast
+Final_date=[2016,10,23,0,0,0];    % last date available in noaa server
 Initial_date_num=datenum(Initial_date);
 Final_date_num=datenum(Final_date);
 Tstep_date=1;                     % time among forecasts
@@ -233,7 +233,7 @@ for idate=Initial_date_num:Tstep_date:Final_date_num
  %    end
 
     %% save results
-    filename=['reforecast_201609_to_now/ws_prate_fore_',datestr(idate,'yyyymmddTHH')];
+    filename=['forecast/ws_prate_fore_',datestr(idate,'yyyymmddTHH')];
     save(filename,'date_list','R_Agg_day','AggList','centr')
     disp(date_list)
 end
