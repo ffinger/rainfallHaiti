@@ -8,7 +8,7 @@ load prec_nasa.mat
 
 for i=1:length(date_list_nasa)
     i
-    R_comm_day=interp2(Y_nasa,X_nasa,nasa_X_Y_day(:,:,i),centroids(:,2),centroids(:,1),'nearest')';
+    R_comm_day(:,i)=interp2(Y_nasa,X_nasa,nasa_X_Y_day(:,:,i),centroids(:,2),centroids(:,1),'nearest')';
    
 end
 
