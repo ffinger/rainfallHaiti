@@ -12,7 +12,9 @@ clc
 close all 
 clear all
 
-load centroids % centroids of the watersheds (where we want to evaluate the precipitation.
+load ../centroids % centroids of the communes (where we want to evaluate the precipitatio)n.
+centr=centroids;
+
 AggList=[];
 %AggList=Agg_a;
 
